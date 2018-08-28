@@ -28,7 +28,6 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
 
-        android:hint="@string/default_query"
         android:background="@color/white"
         android:textSize="30sp"
         android:inputType="textAutoCorrect"
