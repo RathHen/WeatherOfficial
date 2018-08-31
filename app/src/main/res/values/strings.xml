@@ -2,6 +2,9 @@
     <string name="app_name">Clima</string>
     <string name="default_location">Fetching Location</string>
     <string name="default_temp">NA</string>
+    <string name="default_description">NA</string>
+    <string name="default_Image">NA</string>
+
     <string name="change_city_description">Click Here to Change City</string>
     <string name="weather_description">This is the weather symbol</string>
     <string name="back_button_description">Dismiss Change City Screen</string>
@@ -31,25 +34,25 @@
     <string name="fog_one">misty</string>
     <string name="fog_two">Foggyyyyy</string>
 
-    <!--<string name="squalls">Im too young to die</string>-->
-    <!--<string name="tornado">pls God </string>-->
+    <string name="squalls">Im too young to die</string>
+    <string name="tornado">pls God </string>
 
-    <!--<string name="sunny">Beautiful.</string>-->
-    <!--<string name="sunny_two">Hot as FUCK</string>-->
+    <string name="sunny">Beautiful.</string>
+    <string name="sunny_two">Hot as FUCK</string>
 
-    <!--<string name="cloudx_one">Wow</string>-->
-    <!--<string name="cloudx_two">It\'s raining, it\'s pouring </string>-->
-    <!--<string name="cloudx_three">Cloudy with a chance of meatballs</string>-->
+    <string name="cloudx_one">Wow</string>
+    <string name="cloudx_two">Clout Gang </string>
+    <string name="cloudx_three">Cloudy with a chance of meatballs</string>
 
-    <!--<string name="stormx_one">squalls </string>-->
-    <!--<string name="stormx_two">Wheres the basement</string>-->
+    <string name="stormx_one">squalls </string>
+    <string name="stormx_two">Wheres the basement</string>
 
-    <!--<string name="snowx">It\'s raining, it\'s pouring </string>-->
+    <string name="snowx">It\'s raining, it\'s pouring </string>
 
-    <!--<string name="sunnyx">Cloudy with a chance of meatballs</string>-->
+    <string name="sunnyx">Cloudy with a chance of meatballs</string>
 
-    <!--<string name="stormx_three">Cloudy with a chance of meatballs</string>-->
-    <!--<string name="stormx_four">Cloudy with a chance of meatballs</string>-->
-    <!--<string name="stormx_five">Send Help</string>-->
+    <string name="stormx_three">Cloudy with a chance of meatballs</string>
+    <string name="stormx_four">Cloudy with a chance of meatballs</string>
+    <string name="stormx_five">Send Help</string>
 
 </resources>

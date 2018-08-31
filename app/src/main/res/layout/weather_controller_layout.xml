@@ -14,40 +14,143 @@
 
 
     <TextView
+        android:id="@+id/Traffic"
+        android:layout_width="110dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="119dp"
+        android:layout_height="495dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Upper_Body"
+            android:layout_width="130dp"
+            android:layout_height="116dp"
+
+            android:contentDescription="@string/default_Image"
+            android:src="@drawable/dunno"
+            app:layout_constraintBottom_toTopOf="@+id/Leg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/Leg"
+            android:layout_width="0dp"
+            android:layout_height="89dp"
+
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/default_Image"
+            android:src="@drawable/dunno"
+            app:layout_constraintBottom_toTopOf="@+id/Foot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/Foot"
+            android:layout_width="0dp"
+            android:layout_height="89dp"
+
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/default_Image"
+            android:src="@drawable/dunno"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/Accesories"
+            android:layout_width="0dp"
+            android:layout_height="89dp"
+
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/default_Image"
+            android:src="@drawable/dunno"
+            app:layout_constraintBottom_toTopOf="@+id/head"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/default_Image"
+            android:src="@drawable/dunno"
+            app:layout_constraintBottom_toTopOf="@+id/Upper_Body"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
         android:id="@+id/locationTV"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
         android:text="@string/default_location"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/white"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tempTV"
-        android:layout_width="118dp"
-        android:layout_height="112dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/default_temp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/white"
-        android:textSize="60sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/tempTV"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/default_temp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/locationTV"
+        app:layout_constraintVertical_bias="0.019" />
+
     <ImageButton
         android:id="@+id/changeCityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="21dp"
+        android:layout_width="72dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:background="@null"
         android:contentDescription="@string/change_city_description"
         android:src="@drawable/change_city_symbol_small"
@@ -57,23 +160,23 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout2"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/changeCityButton"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTV"
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/weatherSymbolIV"
+            android:id="@+id/Weather_Icon"
             android:layout_width="159dp"
-            android:layout_height="91dp"
+            android:layout_height="89dp"
 
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -81,26 +184,24 @@
             android:src="@drawable/dunno"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="216dp"
+        android:layout_height="218dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/doppio_one"
-        android:text="TextView"
+        android:text="@string/default_description"
         android:textColor="@color/white"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/changeCityButton"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.351" />
 
 </android.support.constraint.ConstraintLayout>
