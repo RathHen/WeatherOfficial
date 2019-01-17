@@ -144,6 +144,8 @@
             android:layout_marginStart="8dp"
             android:fontFamily="@font/anonymous_pro"
             android:text="@string/suggestion"
+            android:shadowColor="@color/black"
+            android:shadowRadius="5"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -156,11 +158,13 @@
     <TextView
         android:id="@+id/locationTV"
         android:layout_width="230dp"
-        android:layout_height="55dp"
+        android:layout_height="71dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/anonymous_pro"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
         android:text="@string/default_location"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -181,6 +185,8 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/anonymous_pro"
         android:singleLine="false"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
         android:text="@string/default_temp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/white"
@@ -217,11 +223,11 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/locationTV"
-        app:layout_constraintVertical_bias="0.039">
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/Weather_Icon"
-            android:layout_width="165dp"
+            android:layout_width="168dp"
             android:layout_height="120dp"
 
             android:contentDescription="@string/weather_description"
@@ -243,6 +249,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/anonymous_pro"
         android:shadowColor="@color/black"
+        android:shadowRadius="5"
         android:text="@string/default_description"
         android:textAlignment="center"
         android:textColor="@color/white"
